@@ -7,7 +7,7 @@ if(empty($_GET['id']))
     die('id is empty');
 }
 
-$id = $_GET['id'];
+$id = intval($_GET['id']);
 
 $conn = connectDB();
 
